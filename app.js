@@ -50,7 +50,7 @@ let user = {
 let checkCase;
 let isEmpty;
 let isEmptyMessage = "You didn't type anything.";
-let cancelMessage = "- What a pity that you didn't want to share yours ";
+let stopDialogue = "- What a pity that you didn't want to share yours ";
 
 console.log(" \n My dialogue. Homework #3. \n ");
 
@@ -59,7 +59,7 @@ console.log(" \n My dialogue. Homework #3. \n ");
 let ageAsk = prompt("What year were you born?");
 
 if (ageAsk === null) {
-  console.log("1. " + cancelMessage + "age :(");
+  console.log("1. " + stopDialogue + "age :(");
 } else {
   let isAge = ageAsk.length === 4 && Number.isInteger(parseInt(ageAsk));
   isEmpty = ageAsk.trim() == "";
@@ -82,7 +82,7 @@ if (ageAsk === null) {
 let cityAsk = prompt("What city do you live? (CZ)");
 
 if (cityAsk === null) {
-  console.log("2. " + cancelMessage + "city :(");
+  console.log("2. " + stopDialogue + "city :(");
 } else {
   checkCase = cityAsk.toLowerCase();
   isEmpty = checkCase.trim() == "";
@@ -108,7 +108,7 @@ if (cityAsk === null) {
 let sportAsk = prompt("What is your favorite sport?");
 
 if (sportAsk === null) {
-  console.log("3. " + cancelMessage + "sport :(");
+  console.log("3. " + stopDialogue + "sport :(");
 } else {
   checkCase = sportAsk.toLowerCase();
   isEmpty = checkCase.trim() == "";
